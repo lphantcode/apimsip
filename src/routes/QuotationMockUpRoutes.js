@@ -4,7 +4,7 @@ let logger = express_logger.getLogger();
 const uuid = require('node-uuid');
 
 module.exports = function (app) {
-  app.get('/mSIPQuotation', async function(req, res) {
+  app.post('/mSIPQuotation', async function(req, res) {
 	try{
 		const OrderData = {
 		  Service_Name : req.body.service,
