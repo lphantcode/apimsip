@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/adaypr/TestRepository.git"
   },
+  "scripts": {
+    "start": "node src/app.js"
+  },
   "author": "Aday",
   "license": "ISC",
   "bugs": {
