@@ -14,7 +14,8 @@ app.use(bodyParser.json());
 const uuid = require('node-uuid');
 const httpContext = require('express-http-context');
 
-var express_logger = require('express-logger-unique-req-id');
+
+//var express_logger = require('express-logger-unique-req-id');
 
 //Fecha
 var f=new Date();
@@ -26,6 +27,7 @@ if(f.getMonth()<9){
 }
 var stringDate =''+ f.getFullYear() + '' + meses + '' + f.getDate();
 
+/*
 //logger configuration
 const fileConf = {
     level: 'debug',
@@ -50,7 +52,7 @@ express_logger.initializeLogger(app, fileConf, consoleConf);
 let logger = express_logger.getLogger();
 
 logger.info('First message');
-
+*/
 
 app.use(httpContext.middleware);
 
