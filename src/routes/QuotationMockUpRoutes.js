@@ -17,12 +17,12 @@ module.exports = function (app) {
 					);	
 		}else{	
 			res.json({
-				"Error": '404 ERROR'
+				"Error": '201 ERROR'
 				});
 		}
 	}catch (e){
 		res.json({
-			"Error Catch": '404 ERROR'
+			"Error Catch": '201 ERROR'
 			});
 	}
   });
