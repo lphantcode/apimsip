@@ -64,7 +64,7 @@ app.use(auth());
 require('./routes/QuotationMockUpRoutes')(app);
 
 var server = app.listen(app.get('port'), () => {
-   //console.log('server on port 3001');
-   logger.info('server on port 3001');
+   console.log('server on port 3001');
+   //logger.info('server on port 3001');
 });
 server.setTimeout(3000000); //20 minutos
