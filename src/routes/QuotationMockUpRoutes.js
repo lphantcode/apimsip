@@ -16,7 +16,7 @@ module.exports = function (app) {
 							}
 					);	
 		}
-		elseif(req.body.service=='UC Mobile Licenses'){							
+		else if(req.body.service=='UC Mobile Licenses'){							
 				res.json({
 							"MRC": 150,
 							"NRC": 120
