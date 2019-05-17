@@ -9,14 +9,14 @@ module.exports = function (app) {
 		const OrderData = {
 		  Service_Name : req.body.service,
 		};
-		if(req.body.service=='UC Mobile License'){							
+		if(req.body.service=='ITFS Standalone'){							
 				res.json({
 							"MRC": 50,
 							"NRC": 20
 							}
 					);	
 		}
-		else if(req.body.service=='UC Mobile Licenses'){							
+		else if(req.body.service=='Trunk'){							
 				res.json({
 							"MRC": 150,
 							"NRC": 120
