@@ -9,7 +9,7 @@ module.exports = function (app) {
 		const OrderData = {
 		  Service_Name : req.body.service,
 		};
-		if(req.body.service=='ITFS Standalone'){							
+		if(req.body.service=='ITFS StandAlone'){							
 				res.json({
 							"MRC": 50,
 							"NRC": 20
