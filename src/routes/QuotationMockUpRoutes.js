@@ -9,13 +9,21 @@ module.exports = function (app) {
 		const OrderData = {
 		  Service_Name : req.body.service,
 		};
-		if(req.body.service!=undefined){							
+		if(req.body.service=='UC Mobile License'){							
 				res.json({
-							"MRC": 100,
-							"NRC": 200
+							"MRC": 50,
+							"NRC": 20
 							}
 					);	
-		}else{	
+		}
+		elseif(req.body.service=='UC Mobile Licenses'){							
+				res.json({
+							"MRC": 150,
+							"NRC": 120
+							}
+					);	
+		}
+		else{	
 			res.json({
 				"Error": '201 ERROR'
 				});
