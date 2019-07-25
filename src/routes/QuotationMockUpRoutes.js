@@ -15,7 +15,7 @@ module.exports = function (app) {
 							"MRC": 50,
 							"NRC": 20,
 							"PPM A Fixed": "0,01",
-							"PPM A Mobile": 0,02,
+							"PPM A Mobile": "0.02",
 							"PPM A Public": 0.03,
 							"PPM B Fixed": 0.04,
 							"PPM B Mobile": 0.05
