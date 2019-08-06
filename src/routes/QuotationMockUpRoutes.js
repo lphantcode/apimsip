@@ -22,6 +22,28 @@ module.exports = function (app) {
 							}
 					);	
 		}
+		else if(req.body.service=='Pure Inbound'){							
+				res.json({"service":"Pure Inbound",
+						"subservice":[
+						{"type":"DID",
+						"MRC":100,
+						"NRC":5
+						},
+						{"type":"ITFS",
+						"MRC":50,
+						"NRC":10,
+						"PPM_A_Fixed": 0.01,
+						"PPM_A_Mobile": 0.02,
+						"PPM_A_Payphone": 0.03
+						},
+						{"type":"Trunk",
+						"MRC":200,
+						"NRC":50
+						}]
+						}
+					);	
+		}
+		
 		else if(req.body.service=='Trunk'){							
 				res.json({
 							"MRC": 150,
