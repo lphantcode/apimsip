@@ -19,7 +19,7 @@ module.exports = function (app) {
 							"PPM A Public": 0.03,
 							"PPM B Fixed": 0.04,
 							"PPM B Mobile": 0.05,
-							"Estimated Minutes": req.body.estimateMinutes
+							"Minutes": req.body.Minutes
 							}
 					);	
 		}
