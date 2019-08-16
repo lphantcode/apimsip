@@ -25,7 +25,7 @@ module.exports = function (app) {
 					"PPM A Public Cost": 0.003,
 					"PPM B Fixed Cost": 0.004,
 					"PPM B Mobile Cost": 0.005,
-					"Minutes": req.body.Minutes						
+					"Minutes": req.body.data[0].Minutes						
 					});	
 		}
 		else if(req.body.service=='Pure Inbound'){							
