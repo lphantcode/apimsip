@@ -11,7 +11,7 @@ module.exports = function (app) {
 		};
 		console.log(req.body);
 		if(req.body.service=='ITFS StandAlone'){
-			if (req.body.data[0]["Country A"] == "Brazil"){
+			if (req.body.data[0]["Country A"] == "Brasil"){
 				output = {"MRC": 4.13,
 					"NRC": 0,
 					"MRC Cost":3.30,
@@ -29,7 +29,7 @@ module.exports = function (app) {
 					"Minutes": req.body.data[0].Minutes						
 					}
 			}
-			else if (req.body.data[0]["Country A"] == "Perú"){
+			else if (req.body.data[0]["Country A"] == "Peru"){
 				output = {"MRC": 112.07,
 					"NRC": 112.07,
 					"MRC Cost": 89.65,
