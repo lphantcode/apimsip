@@ -12,7 +12,7 @@ module.exports = function (app) {
 		console.log(req.body);
 		if(req.body.service=='ITFS StandAlone'){
 			if (req.body.data[0]["Country A"] == "Brasil"){
-				output = {"MRC": 50,
+				output = {"MRC": 80,
 					"NRC": 20,
 					"MRC Cost":30,
 					"NRC Cost":10,
