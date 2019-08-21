@@ -10,8 +10,9 @@ module.exports = function (app) {
 		  Service_Name : req.body.service,
 		};
 		console.log(req.body);
-		if(req.body.service=='ITFS StandAlone'){							
-				res.json({"MRC": 50,
+		if(req.body.service=='ITFS StandAlone'){
+			if (req.body.data[0]["Country A"] == "Brasil"){
+				output = {"MRC": 50,
 					"NRC": 20,
 					"MRC Cost":30,
 					"NRC Cost":10,
@@ -26,7 +27,9 @@ module.exports = function (app) {
 					"PPM B Fixed Cost": 0.004,
 					"PPM B Mobile Cost": 0.005,
 					"Minutes": req.body.data[0].Minutes						
-					});	
+					}
+			};
+			res.json(output);	
 		}
 		else if(req.body.service=='Pure Inbound'){							
 				res.json({"service":"Pure Inbound",
