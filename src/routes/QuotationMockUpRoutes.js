@@ -28,7 +28,7 @@ module.exports = function (app) {
 					"PPM B Mobile Cost": 0.005,
 					"Minutes": req.body.data[0].Minutes						
 					}
-			};
+			}
 			else if (req.body.data[0]["Country A"] == "Spain"){
 				output = {"MRC": 100,
 					"NRC": 20,
