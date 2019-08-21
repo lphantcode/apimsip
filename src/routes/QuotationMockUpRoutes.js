@@ -29,6 +29,24 @@ module.exports = function (app) {
 					"Minutes": req.body.data[0].Minutes						
 					}
 			}
+			else if (req.body.data[0]["Country A"] == "Perú"){
+				output = {"MRC": 90,
+					"NRC": 20,
+					"MRC Cost":30,
+					"NRC Cost":10,
+					"PPM A Fixed": 0.01,
+					"PPM A Mobile": 0.02,
+					"PPM A Public": 0.03,
+					"PPM B Fixed": 0.04,
+					"PPM B Mobile": 0.05,
+					"PPM A Fixed Cost": 0.001,
+					"PPM A Mobile Cost": 0.002,
+					"PPM A Public Cost": 0.003,
+					"PPM B Fixed Cost": 0.004,
+					"PPM B Mobile Cost": 0.005,
+					"Minutes": req.body.data[0].Minutes						
+					}
+			}
 			else if (req.body.data[0]["Country A"] == "Spain"){
 				output = {"MRC": 100,
 					"NRC": 20,
