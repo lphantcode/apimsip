@@ -7,10 +7,10 @@ module.exports = function (app) {
   app.post('/mSIPQuotation', async function(req, res) {
 	try{
 		const OrderData = {
-		  Service_Name : req.body.scene,
+		  Service_Name : req.body.service,
 		};
 		console.log(req.body);
-		if(req.body.scene=='ITFS StandAlone'){
+		if(req.body.service=='ITFS StandAlone'){
 			if (req.body.data[0]["Country A"] == "Brasil"){
 				output = {"MRC": 4.13,
 					"NRC": 0,
@@ -26,7 +26,7 @@ module.exports = function (app) {
 					"PPM A Public Cost": 0.0831,
 					"PPM B Fixed Cost": 0.0052,
 					"PPM B Mobile Cost": 0.0052,
-					"Minutes": req.body.data[0].Minutes						
+					"Minutes": req.body.data[0].Minutes
 					}
 			}
 			else if (req.body.data[0]["Country A"] == "Peru"){
@@ -62,12 +62,13 @@ module.exports = function (app) {
 					"PPM A Public Cost": 0.11,
 					"PPM B Fixed Cost": 0.0052,
 					"PPM B Mobile Cost": 0.0052,
-					"Minutes": req.body.data[0].Minutes						
+					"Minutes": req.body.data[0].Minutes,
+				 	"request": req.body
 					}
 			};
 			res.json(output);	
 		}
-		else if(req.body.scene=='Pure Inbound'){							
+		else if(req.body.service=='Pure Inbound'){							
 				res.json({"service":"Pure Inbound",
 						"subservice":[
 						{"type":"DID",
@@ -89,7 +90,7 @@ module.exports = function (app) {
 					);	
 		}
 		
-		else if(req.body.scene=='Trunk'){							
+		else if(req.body.service=='Trunk'){							
 				res.json({
 							"MRC": 150,
 							"NRC": 120
