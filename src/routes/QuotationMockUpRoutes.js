@@ -7,10 +7,10 @@ module.exports = function (app) {
   app.post('/mSIPQuotation', async function(req, res) {
 	try{
 		const OrderData = {
-		  Service_Name : req.body.service,
+		  Service_Name : req.body.scene,
 		};
 		console.log(req.body);
-		if(req.body.service=='ITFS StandAlone'){
+		if(req.body.scene=='ITFS StandAlone'){
 			if (req.body.data[0]["Country A"] == "Brasil"){
 				output = {"MRC": 4.13,
 					"NRC": 0,
@@ -67,7 +67,7 @@ module.exports = function (app) {
 			};
 			res.json(output);	
 		}
-		else if(req.body.service=='Pure Inbound'){							
+		else if(req.body.scene=='Pure Inbound'){							
 				res.json({"service":"Pure Inbound",
 						"subservice":[
 						{"type":"DID",
@@ -89,7 +89,7 @@ module.exports = function (app) {
 					);	
 		}
 		
-		else if(req.body.service=='Trunk'){							
+		else if(req.body.scene=='Trunk'){							
 				res.json({
 							"MRC": 150,
 							"NRC": 120
