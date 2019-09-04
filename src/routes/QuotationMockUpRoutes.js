@@ -34,6 +34,7 @@ module.exports = function (app) {
 					"NRC": 112.07,
 					"MRC_Cost": 89.65,
 					"NRC_Cost": 89.65,
+					"PPM_B": 100,
 					"PPM_A_Fixed": -1,
 					"PPM_A_Mobile": -1,
 					"PPM_A_Public": -1,
