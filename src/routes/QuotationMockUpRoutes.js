@@ -30,11 +30,11 @@ module.exports = function (app) {
 					}
 			}
 			else if (req.body.data[0]["Country_A"] == "Italy"){
-				if (req.body.data[0]["Provider_A"] == "Colt"){
+				//if (req.body.data[0]["Provider_A"] == "Colt"){
 					output = {"MRC":0,"NRC":1.25,"MRC_Costs":0,"NRC_Costs":1,"PPM_A_Fixed":0.01248,"PPM_A_Mobile":0.17576,"PPM_A_Public":0.14300000000000002,"PPM_B":0.0035626184648526083,"PPM_A_Fixed_Costs":0.0096,"PPM_A_Mobile_Costs":0.1352,"PPM_A_Public_Costs":0.11,"PPM_B_Costs":0.0025479,"Minutes":10000}
-				}
-				else if (req.body.data[0]["Provider_A"] == "Voxbone"){
-					output = {"MRC":0.1875,"NRC":3.75,"MRC_Costs":0.15,"NRC_Costs":3,"PPM_A_Fixed":0.03549,"PPM_A_Mobile":0.29016000000000003,"PPM_A_Public":0.21554,"PPM_B":0.0035626184648526083,"PPM_A_Fixed_Costs":0.0273,"PPM_A_Mobile_Costs":0.2232,"PPM_A_Public_Costs":0.1658,"PPM_B_Costs":0.0025479,"Minutes":10000}
+				//}
+				//else if (req.body.data[0]["Provider_A"] == "Voxbone"){
+				//	output = {"MRC":0.1875,"NRC":3.75,"MRC_Costs":0.15,"NRC_Costs":3,"PPM_A_Fixed":0.03549,"PPM_A_Mobile":0.29016000000000003,"PPM_A_Public":0.21554,"PPM_B":0.0035626184648526083,"PPM_A_Fixed_Costs":0.0273,"PPM_A_Mobile_Costs":0.2232,"PPM_A_Public_Costs":0.1658,"PPM_B_Costs":0.0025479,"Minutes":10000}
 				}
 			else if (req.body.data[0]["Country_A"] == "Peru"){
 				output = {"MRC":0,"NRC":102.73937500000001,"MRC_Costs":0,"NRC_Costs":82.1915,"PPM_A_Fixed":0.11752,"PPM_A_Mobile":0.11752,"PPM_A_Public":-1.3,"PPM_B":0.0028709354726631398,"PPM_A_Fixed_Costs":0.0904,"PPM_A_Mobile_Costs":0.0904,"PPM_A_Public_Costs":-1,"PPM_B_Costs":0.0020547,"Minutes":20000}
