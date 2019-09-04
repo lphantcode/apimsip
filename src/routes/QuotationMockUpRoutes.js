@@ -37,7 +37,7 @@ module.exports = function (app) {
 					"PPM_A_Fixed": 0.13,
 					"PPM_A_Mobile": 0.13,
 					"PPM_A_Public": 0.13,
-					"PPM_B_Fixed": 0.0159,
+					"PPM_B_Fixed": -1,
 					"PPM_B_Mobile": 0.0159,
 					"PPM_A_Fixed_Cost": 0.0986,
 					"PPM_A_Mobile_Cost": 0.0986,
