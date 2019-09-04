@@ -45,6 +45,7 @@ module.exports = function (app) {
 					"PPM_A_Public_Cost": -1,
 					"PPM_B_Fixed_Cost": -1,
 					"PPM_B_Mobile_Cost": -1,
+					"PPM_B_Cost": 50,
 					"Minutes": req.body.data[0].Minutes						
 					}
 			}
