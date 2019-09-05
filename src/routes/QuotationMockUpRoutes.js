@@ -50,7 +50,7 @@ module.exports = function (app) {
 				}
 			}
 			else if (req.body.data[0]["Country_A"] == "Peru"){
-				output = {"MRC":0,"NRC":102.73937500000001,"MRC_Cost":0,"NRC_Cost":82.1915,"PPM_A_Fixed":0.11752,"PPM_A_Mobile":0.11752,"PPM_A_Public":-1.3,"PPM_B":0.0028709354726631398,"PPM_A_Fixed_Cost":0.0904,"PPM_A_Mobile_Cost":0.0904,"PPM_A_Public_Cost":-1,"PPM_B_Cost":0.0020547,"Minutes":20000}
+				output = {"MRC":0,"NRC":102.73937500000001,"MRC_Cost":0,"NRC_Cost":82.1915,"PPM_A_Fixed":0.11752,"PPM_A_Mobile":0.11752,"PPM_A_Public":-1.3,"PPM_B":0.0028709354726631398,"PPM_A_Fixed_Cost":0.0904,"PPM_A_Mobile_Cost":0.0904,"PPM_A_Public_Cost":-1,"PPM_B_Cost":0.0020547,"Minutes":20000 }
 			}
 			res.json(output);	
 		}
