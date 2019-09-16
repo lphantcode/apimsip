@@ -55,24 +55,37 @@ module.exports = function (app) {
 			res.json(output);	
 		}
 		else if(req.body.service=='Pure Inbound'){							
-				res.json({"service":"Pure Inbound",
-						"subservice":[
-						{"type":"DID",
-						"MRC":100,
-						"NRC":5
-						},
-						{"type":"ITFS",
-						"MRC":50,
-						"NRC":10,
-						"PPM_A_Fixed": 0.01,
-						"PPM_A_Mobile": 0.02,
-						"PPM_A_Payphone": 0.03
-						},
-						{"type":"Trunk",
-						"MRC":200,
-						"NRC":50
-						}]
-						}
+				res.json({"data": [
+					    {
+					      "MRC": 0,
+					      "NRC": 1.25,
+					      "MRC_Cost": 0,
+					      "NRC_Cost": 1,
+					      "salesforceCI": "a0a0D000001uICeQAM"
+					    },					    
+					    {
+					      "MRC": 0,
+					      "NRC": 1.25,
+					      "MRC_Cost": 0,
+					      "NRC_Cost": 1,
+					      "PPM_A_Fixed": 0.01,
+					      "PPM_A_Mobile": 0.18,
+					      "PPM_A_Public": 0.14,
+					      "PPM_A_Fixed_Cost": 0.0096,
+					      "PPM_A_Mobile_Cost": 0.1352,
+					      "PPM_A_Public_Cost": 0.11,
+					      "salesforceCI": "a0a0D000001uICfQAM"
+					    },
+					    {
+					      "MRC": 0,
+					      "NRC": 1.25,
+					      "MRC_Cost": 0,
+					      "NRC_Cost": 1,
+					      "salesforceCI": "a0a0D000001uIDpQAM"
+					    }
+					  ]
+					}
+
 					);	
 		}
 		
