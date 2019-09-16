@@ -57,15 +57,15 @@ module.exports = function (app) {
 		else if(req.body.service=='Pure Inbound'){							
 				res.json({"data": [
 					    {
-					      "MRC": 0,
-					      "NRC": 1.25,
+					      "MRC": 1,
+					      "NRC": 2,
 					      "MRC_Cost": 0,
 					      "NRC_Cost": 1,
 					      "salesforceCI": "a0a0D000001uICeQAM"
 					    },					    
 					    {
-					      "MRC": 0,
-					      "NRC": 1.25,
+					      "MRC": 3,
+					      "NRC": 4,
 					      "MRC_Cost": 0,
 					      "NRC_Cost": 1,
 					      "PPM_A_Fixed": 0.01,
@@ -77,8 +77,8 @@ module.exports = function (app) {
 					      "salesforceCI": "a0a0D000001uICfQAM"
 					    },
 					    {
-					      "MRC": 0,
-					      "NRC": 1.25,
+					      "MRC": 5,
+					      "NRC": 6,
 					      "MRC_Cost": 0,
 					      "NRC_Cost": 1,
 					      "salesforceCI": "a0a0D000001uIDpQAM"
