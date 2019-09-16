@@ -59,15 +59,15 @@ module.exports = function (app) {
 					    {
 					      "MRC": 1,
 					      "NRC": 2,
-					      "MRC_Cost": 0,
-					      "NRC_Cost": 1,
+					      "MRC_Cost": 0.5,
+					      "NRC_Cost": 1.5,
 					      "salesforceCI": "a0a0D000001uICeQAM"
 					    },					    
 					    {
 					      "MRC": 3,
 					      "NRC": 4,
-					      "MRC_Cost": 0,
-					      "NRC_Cost": 1,
+					      "MRC_Cost": 0.6,
+					      "NRC_Cost": 1.6,
 					      "PPM_A_Fixed": 0.01,
 					      "PPM_A_Mobile": 0.18,
 					      "PPM_A_Public": 0.14,
@@ -77,8 +77,8 @@ module.exports = function (app) {
 					      "salesforceCI": "a0a0D000001uICfQAM"
 					    },
 					    {
-					      "MRC": 5,
-					      "NRC": 6,
+					      "MRC": 5.7,
+					      "NRC": 6.7,
 					      "MRC_Cost": 0,
 					      "NRC_Cost": 1,
 					      "salesforceCI": "a0a0D000001uIDpQAM"
