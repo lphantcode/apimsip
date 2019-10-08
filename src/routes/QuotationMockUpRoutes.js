@@ -19,13 +19,11 @@ module.exports = function (app) {
 					"PPM_A_Fixed": 0.11,
 					"PPM_A_Mobile": 0.36,
 					"PPM_A_Public": 0.11,
-					"PPM_B_Fixed": 0.0130,
-					"PPM_B_Mobile": 0.0130,
+					"PPM_B": 0.0130,
 					"PPM_A_Fixed_Cost": 0.0831,
 					"PPM_A_Mobile_Cost": 0.2769,
 					"PPM_A_Public_Cost": 0.0831,
-					"PPM_B_Fixed_Cost": 0.0052,
-					"PPM_B_Mobile_Cost": 0.0052,
+					"PPM_B_Cost": 0.0052,
 					"Minutes": req.body.data[0].Minutes
 					}
 			}
