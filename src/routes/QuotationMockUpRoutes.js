@@ -10,7 +10,7 @@ module.exports = function (app) {
 		  Service_Name : req.body.service,
 		};
 		console.log(req.body);
-		if(req.body.service=='ITFS StandAlone2'){
+		if(req.body.service=='StandAlone'){
 			if (req.body.data[0]["Country_A"] == "Brasil"){
 				output = {"MRC": 4.13,
 					"NRC": 0,
