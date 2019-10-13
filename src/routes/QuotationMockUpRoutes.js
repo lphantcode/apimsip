@@ -10,47 +10,45 @@ module.exports = function (app) {
 		  Service_Name : req.body.service,
 		};
 		console.log(req.body);
-		if(req.body.service=='StandAlone'){
-			if (req.body.data[0]["Country_A"] == "Brasil"){
-				output = {"MRC": 4.13,
-					"NRC": 0,
-					"MRC Cost":3.30,
-					"NRC Cost":0,
-					"PPM_A_Fixed": 0.11,
-					"PPM_A_Mobile": 0.36,
-					"PPM_A_Public": 0.11,
-					"PPM_B": 0.0130,
-					"PPM_A_Fixed_Cost": 0.0831,
-					"PPM_A_Mobile_Cost": 0.2769,
-					"PPM_A_Public_Cost": 0.0831,
-					"PPM_B_Cost": 0.0052,
-					"Minutes": req.body.data[0].Minutes
-					}
-			}
-			else if (req.body.data[0]["Country_A"] == "Italy"){
-				if (req.body.data[0]["Provider_A"] == "Colt"){
-					output = {"MRC":0,
-						  "NRC":1.25,
-						  "MRC_Cost":0,
-						  "NRC_Cost":1,
-						  "PPM_A_Fixed":0.01248,
-						  "PPM_A_Mobile":0.17576,
-						  "PPM_A_Public":0.14300000000000002,
-						  "PPM_B":0.0035626184648526083,
-						  "PPM_A_Fixed_Cost":0.0096,
-						  "PPM_A_Mobile_Cost":0.1352,
-						  "PPM_A_Public_Cost":0.11,
-						  "PPM_B_Cost":0.0025479,
-						  "Minutes":10000}
-				}
-				else if (req.body.data[0]["Provider_A"] == "Voxbone"){
-					output = {"MRC":0.1875,"NRC":3.75,"MRC_Cost":0.15,"NRC_Cost":3,"PPM_A_Fixed":0.03549,"PPM_A_Mobile":0.29016000000000003,"PPM_A_Public":0.21554,"PPM_B":0.0035626184648526083,"PPM_A_Fixed_Cost":0.0273,"PPM_A_Mobile_Cost":0.2232,"PPM_A_Public_Cost":0.1658,"PPM_B_Cost":0.0025479,"Minutes":10000}
-				}
-			}
-			else if (req.body.data[0]["Country_A"] == "Peru"){
-				output = {"MRC":0,"NRC":102.73937500000001,"MRC_Cost":0,"NRC_Cost":82.1915,"PPM_A_Fixed":0.11752,"PPM_A_Mobile":0.11752,"PPM_A_Public":-1.3,"PPM_B":0.0028709354726631398,"PPM_A_Fixed_Cost":0.0904,"PPM_A_Mobile_Cost":0.0904,"PPM_A_Public_Cost":-1,"PPM_B_Cost":0.0020547,"Minutes":20000 }
-			}
-			res.json(output);	
+		if(req.body.service=='StandAlone'){			
+			res.json({
+			  "data": [
+			    {
+			      "subservice": "DDI StandAlone",
+			      "MRC": 4.41775,
+			      "NRC": 4.41775,
+			      "MRC_Cost": 3.5342,
+			      "NRC_Cost": 3.5342,
+			      "salesforceCI": req.body.data[0].salesforceCI,
+			      "PPM_A_Fixed": -1,
+			      "PPM_A_Mobile": -1,
+			      "PPM_A_Public": -1,
+			      "PPM_A_Fixed_Cost": -1,
+			      "PPM_A_Mobile_Cost": -1,
+			      "PPM_A_Public_Cost": -1,
+			      "PPM_B": 0.001,
+			      "PPM_B_Cost": 0.0001,
+			      "Minutes": 1000
+			    },
+			    {
+			      "subservice": "ITFS StandAlone",
+			      "MRC": 0.1875,
+			      "NRC": 0,
+			      "MRC_Cost": 0.15,
+			      "NRC_Cost": 0,
+			      "salesforceCI": req.body.data[0].salesforceCI,
+			      "PPM_A_Fixed": -1,
+			      "PPM_A_Mobile": -1,
+			      "PPM_A_Public": -1,
+			      "PPM_A_Fixed_Cost": -1,
+			      "PPM_A_Mobile_Cost": -1,
+			      "PPM_A_Public_Cost": -1,
+			      "PPM_B": 0.001,
+			      "PPM_B_Cost": 0.0001,
+			      "Minutes": 1000
+			    }
+			  ]
+			});	
 		}
 		else if(req.body.service=='Pure Inbound'){							
 				res.json({"data": [
