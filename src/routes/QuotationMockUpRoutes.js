@@ -36,7 +36,7 @@ module.exports = function (app) {
 			      "NRC": 0,
 			      "MRC_Cost": 0.15,
 			      "NRC_Cost": 0,
-			      "salesforceCI": req.body.data[0].salesforceCI,
+			      "salesforceCI": req.body.data[1].salesforceCI,
 			      "PPM_A_Fixed": -1,
 			      "PPM_A_Mobile": -1,
 			      "PPM_A_Public": -1,
