@@ -26,8 +26,8 @@ module.exports = function (app) {
 			      "PPM_A_Fixed_Cost": -1,
 			      "PPM_A_Mobile_Cost": -1,
 			      "PPM_A_Public_Cost": -1,
-			      "PPM_B": 0.001,
-			      "PPM_B_Cost": 0.0001,
+			      "PPM_B": 0.002,
+			      "PPM_B_Cost": 0.0002,
 			      "Minutes": 1000
 			    },
 			    {
@@ -43,8 +43,8 @@ module.exports = function (app) {
 			      "PPM_A_Fixed_Cost": -1,
 			      "PPM_A_Mobile_Cost": -1,
 			      "PPM_A_Public_Cost": -1,
-			      "PPM_B": 0.001,
-			      "PPM_B_Cost": 0.0001,
+			      "PPM_B": 0.003,
+			      "PPM_B_Cost": 0.0003,
 			      "Minutes": 1000
 			    }
 			  ]
