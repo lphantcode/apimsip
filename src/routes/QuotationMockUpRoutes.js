@@ -12,43 +12,60 @@ module.exports = function (app) {
 		console.log(req.body);
 		if(req.body.service=='StandAlone'){			
 			res.json({
-			  "data": [
-			    {
-			      "subservice": "DDI StandAlone",
-			      "MRC": 4.41775,
-			      "NRC": 4.41775,
-			      "MRC_Cost": 3.5342,
-			      "NRC_Cost": 3.5342,
-			      "salesforceCI": req.body.data[0].salesforceCI,
-			      "PPM_A_Fixed": -1,
-			      "PPM_A_Mobile": -1,
-			      "PPM_A_Public": -1,
-			      "PPM_A_Fixed_Cost": -1,
-			      "PPM_A_Mobile_Cost": -1,
-			      "PPM_A_Public_Cost": -1,
-			      "PPM_B": 0.055,
-			      "PPM_B_Cost": 0.0055,
-			      "Minutes": 1000
-			    },
-			    {
-			      "subservice": "ITFS StandAlone",
-			      "MRC": 0.1875,
-			      "NRC": 0,
-			      "MRC_Cost": 0.15,
-			      "NRC_Cost": 0,
-			      "salesforceCI": req.body.data[1].salesforceCI,
-			      "PPM_A_Fixed": -1,
-			      "PPM_A_Mobile": -1,
-			      "PPM_A_Public": -1,
-			      "PPM_A_Fixed_Cost": -1,
-			      "PPM_A_Mobile_Cost": -1,
-			      "PPM_A_Public_Cost": -1,
-			      "PPM_B": 0.003,
-			      "PPM_B_Cost": 0.0003,
-			      "Minutes": 1000
-			    }
-			  ]
-			});	
+				  "data": [
+				    {
+				      "subservice": "DDI StandAlone",
+				      "salesforceCI": "a0a0D00000271DvQAI",
+				      "MRC": 0,
+				      "NRC": 0.9333333333333332,
+				      "MRC_Cost": 0,
+				      "NRC_Cost": 0.7,
+				      "PPM_A_Fixed": -1.4285714285714286,
+				      "PPM_A_Mobile": -1.4285714285714286,
+				      "PPM_A_Public": -1.4285714285714286,
+				      "PPM_B": -1.3698320105820108,
+				      "PPM_A_Fixed_Cost": -1,
+				      "PPM_A_Mobile_Cost": -1,
+				      "PPM_A_Public_Cost": -1,
+				      "PPM_B_Cost": -1,
+				      "Minutes": 1000
+				    },
+				    {
+				      "subservice": "ITFS StandAlone",
+				      "salesforceCI": "a0a0D00000271DwQAI",
+				      "MRC": 0,
+				      "NRC": 1.3333333333333333,
+				      "MRC_Cost": 0,
+				      "NRC_Cost": 1,
+				      "PPM_A_Fixed": 0.013714285714285714,
+				      "PPM_A_Mobile": 0.19314285714285714,
+				      "PPM_A_Public": 0.15714285714285717,
+				      "PPM_B": -1.3699280045351474,
+				      "PPM_A_Fixed_Cost": 0.0096,
+				      "PPM_A_Mobile_Cost": 0.1352,
+				      "PPM_A_Public_Cost": 0.11,
+				      "PPM_B_Cost": -1,
+				      "Minutes": 2000
+				    },
+				    {
+				      "subservice": "ITFS StandAlone",
+				      "salesforceCI": "a0a0D00000271DxQAI",
+				      "MRC": 0,
+				      "NRC": 0,
+				      "MRC_Cost": 0,
+				      "NRC_Cost": 0,
+				      "PPM_A_Fixed": 0.14085714285714285,
+				      "PPM_A_Mobile": 0.14085714285714285,
+				      "PPM_A_Public": -1.4285714285714286,
+				      "PPM_B": -1.369944003527337,
+				      "PPM_A_Fixed_Cost": 0.0986,
+				      "PPM_A_Mobile_Cost": 0.0986,
+				      "PPM_A_Public_Cost": -1,
+				      "PPM_B_Cost": -1,
+				      "Minutes": 9000
+				    }
+				  ]
+				});	
 		}
 		else if(req.body.service=='Pure Inbound'){							
 				res.json({"data": [
