@@ -15,7 +15,7 @@ module.exports = function (app) {
 				  "data": [
 				    {
 				      "subservice": "DDI StandAlone",
-				      "salesforceCI": "a0a0D00000271DvQAI",
+				      "salesforceCI": req.body.data[0].salesforceCI,
 				      "MRC": 0,
 				      "NRC": 0.9333333333333332,
 				      "MRC_Cost": 0,
@@ -32,7 +32,7 @@ module.exports = function (app) {
 				    },
 				    {
 				      "subservice": "ITFS StandAlone",
-				      "salesforceCI": "a0a0D00000271DwQAI",
+				      "salesforceCI": req.body.data[1].salesforceCI,
 				      "MRC": 0,
 				      "NRC": 1.3333333333333333,
 				      "MRC_Cost": 0,
@@ -49,7 +49,7 @@ module.exports = function (app) {
 				    },
 				    {
 				      "subservice": "ITFS StandAlone",
-				      "salesforceCI": "a0a0D00000271DxQAI",
+				      "salesforceCI": req.body.data[2].salesforceCI,
 				      "MRC": 0,
 				      "NRC": 0,
 				      "MRC_Cost": 0,
