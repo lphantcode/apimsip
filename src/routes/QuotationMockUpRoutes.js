@@ -10,7 +10,8 @@ module.exports = function (app) {
 		  Service_Name : req.body.service,
 		};
 		console.log(req.body);
-		console.log('IP: ' + req.connection.remoteAddress)
+		//console.log('IP: ' + req.connection.remoteAddress)
+		console.log('IPs: ' + req.ip);
 		if(req.body.service=='StandAlone'){			
 			res.json({
 				  "data": [
