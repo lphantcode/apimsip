@@ -11,11 +11,7 @@ module.exports = function (app) {
 				{
 					    "text": 'Hello, how are you? This should be a very long message so that we can test how it fit into the screen.',
 					    "reply": false,
-					    "date": new Date(),
-					    "user": {
-					      "name": 'John Doe',
-					      "avatar": 'https://i.gifer.com/no.gif',
-					    }
+					    "date": new Date()
 					  }
 				  ]
 				});
