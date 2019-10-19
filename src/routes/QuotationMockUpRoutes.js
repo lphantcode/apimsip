@@ -4,6 +4,23 @@ let logger = express_logger.getLogger();
 const uuid = require('node-uuid');
 
 module.exports = function (app) {
+	
+	app.get('/mSIPQuotation', async function(req, res) {
+		res.json({
+			  "data": [
+				{
+					    "text": 'Hello, how are you? This should be a very long message so that we can test how it fit into the screen.',
+					    "reply": false,
+					    "date": new Date(),
+					    "user": {
+					      "name": 'John Doe',
+					      "avatar": 'https://i.gifer.com/no.gif',
+					    }
+					  }
+				  ]
+				});
+  	});
+	
   app.post('/mSIPQuotation', async function(req, res) {
 	try{
 		const OrderData = {
