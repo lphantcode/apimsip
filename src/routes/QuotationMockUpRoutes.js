@@ -23,6 +23,7 @@ module.exports = function (app) {
 		  Service_Name : req.body.service,
 		};
 		console.log(req.body);
+		console.log(req.body.data[1]);
 		//console.log('IP: ' + req.connection.remoteAddress)
 		console.log('IPs: ' + req.ip);
 		if(req.body.service=='StandAlone'){			
