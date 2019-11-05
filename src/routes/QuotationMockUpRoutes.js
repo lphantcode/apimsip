@@ -99,7 +99,9 @@ module.exports = function (app) {
 						    "PPM_A_Public": -1.0,
 						    "PPM_A_Fixed_Cost": -1.0,
 						    "PPM_A_Mobile_Cost": -1.0,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Public_Cost": -1.0,
+						    "Portability": -1.0,
+						    "Portability_Cost": -1.0
 						},
 						{
 						    "subservice": "DID",
@@ -113,7 +115,9 @@ module.exports = function (app) {
 						    "PPM_A_Public": -1.0,
 						    "PPM_A_Fixed_Cost": 0.0235,
 						    "PPM_A_Mobile_Cost": 0.0235,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Public_Cost": -1.0,
+						    "Portability": 100.0,
+						    "Portability_Cost": 50.0
 						},
 						{
 						    "subservice": "DID",
@@ -127,7 +131,9 @@ module.exports = function (app) {
 						    "PPM_A_Public": -1.0,
 						    "PPM_A_Fixed_Cost": 0.101,
 						    "PPM_A_Mobile_Cost": 0.101,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Public_Cost": -1.0,
+						    "Portability": 200.0,
+						    "Portability_Cost": 100.0
 						},
 						{
 						    "subservice": "ITFS",
@@ -141,7 +147,9 @@ module.exports = function (app) {
 						    "PPM_A_Public": -1.0,
 						    "PPM_A_Fixed_Cost": 0.0904,
 						    "PPM_A_Mobile_Cost": 0.0904,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Public_Cost": -1.0,
+						    "Portability": 50.0,
+						    "Portability_Cost": 25.0
 						},
 						{
 						    "subservice": "ITFS",
@@ -155,7 +163,9 @@ module.exports = function (app) {
 						    "PPM_A_Public": -1.0,
 						    "PPM_A_Fixed_Cost": 0.0205,
 						    "PPM_A_Mobile_Cost": 0.159,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Public_Cost": -1.0,
+						    "Portability": 75.0,
+						    "Portability_Cost": 60.0
 						}
 					    ]
 					}
