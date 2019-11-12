@@ -172,6 +172,62 @@ module.exports = function (app) {
 
 					);	
 		}
+		else if(req.body.service=='Enterprise'){							
+				res.json(
+					{
+					    "data": [
+						{
+						    "Portability_Cost": 0.0,
+						    "Portability": 0.0,
+						    "subservice": "DID Enterprise",
+						    "MRC": 38.2052,
+						    "NRC": 2.0406666666666666,
+						    "MRC_Cost": 28.6539,
+						    "NRC_Cost": 1.5305,
+						    "salesforceCI": "a0a0D000002KCs4QAG",
+						    "PPM_A_Fixed": 0.0,
+						    "PPM_A_Mobile": 0.0,
+						    "PPM_A_Public": -1.0,
+						    "PPM_A_Fixed_Cost": 0.0,
+						    "PPM_A_Mobile_Cost": 0.0,
+						    "PPM_A_Public_Cost": -1.0
+						},
+						{
+						    "Portability_Cost": 0.0,
+						    "Portability": 0.0,
+						    "subservice": "DID Enterprise",
+						    "MRC": 1.8666666666666665,
+						    "NRC": 1.3333333333333333,
+						    "MRC_Cost": 1.4,
+						    "NRC_Cost": 1.0,
+						    "salesforceCI": "a0a0D000002KCs5QAG",
+						    "PPM_A_Fixed": 0.0,
+						    "PPM_A_Mobile": -1.0,
+						    "PPM_A_Public": -1.0,
+						    "PPM_A_Fixed_Cost": 0.0,
+						    "PPM_A_Mobile_Cost": -1.0,
+						    "PPM_A_Public_Cost": -1.0
+						},
+						{
+						    "Portability_Cost": 0.0,
+						    "Portability": 0.0,
+						    "subservice": "Trunk",
+						    "MRC": 32.306666666666672,
+						    "NRC": 0.0,
+						    "MRC_Cost": 26.48,
+						    "NRC_Cost": 0.0,
+						    "salesforceCI": "a0a0D000002KCsgQAG",
+						    "PPM_A_Fixed": -1.0,
+						    "PPM_A_Mobile": -1.0,
+						    "PPM_A_Public": -1.0,
+						    "PPM_A_Fixed_Cost": -1.0,
+						    "PPM_A_Mobile_Cost": -1.0,
+						    "PPM_A_Public_Cost": -1.0
+						}
+					    ]
+					}
+				);	
+		}
 		
 		else if(req.body.service=='Trunk'){							
 				res.json({
