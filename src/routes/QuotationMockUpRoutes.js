@@ -185,12 +185,12 @@ module.exports = function (app) {
 						    "MRC_Cost": 28.6539,
 						    "NRC_Cost": 1.5305,
 						    "salesforceCI": "a0a0D000002KCs4QAG",
-						    "PPM_A_Fixed": 0.0,
-						    "PPM_A_Mobile": 0.0,
-						    "PPM_A_Public": -1.0,
-						    "PPM_A_Fixed_Cost": 0.0,
-						    "PPM_A_Mobile_Cost": 0.0,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Fixed": 0.01,
+						    "PPM_A_Mobile": 0.01,
+						    "PPM_A_Public": 0.01,
+						    "PPM_A_Fixed_Cost": 0.01,
+						    "PPM_A_Mobile_Cost": 0.01,
+						    "PPM_A_Public_Cost": 0.01
 						},
 						{
 						    "Portability_Cost": 0.0,
@@ -201,12 +201,12 @@ module.exports = function (app) {
 						    "MRC_Cost": 1.4,
 						    "NRC_Cost": 1.0,
 						    "salesforceCI": "a0a0D000002KCs5QAG",
-						    "PPM_A_Fixed": 0.0,
-						    "PPM_A_Mobile": -1.0,
-						    "PPM_A_Public": -1.0,
-						    "PPM_A_Fixed_Cost": 0.0,
-						    "PPM_A_Mobile_Cost": -1.0,
-						    "PPM_A_Public_Cost": -1.0
+						    "PPM_A_Fixed": 0.01,
+						    "PPM_A_Mobile": 0.01,
+						    "PPM_A_Public": 0.01,
+						    "PPM_A_Fixed_Cost": 0.01,
+						    "PPM_A_Mobile_Cost": 0.01,
+						    "PPM_A_Public_Cost": 0.01
 						},
 						{
 						    "Portability_Cost": 0.0,
@@ -220,7 +220,7 @@ module.exports = function (app) {
 						    "PPM_A_Fixed": -1.0,
 						    "PPM_A_Mobile": -1.0,
 						    "PPM_A_Public": -1.0,
-						    "PPM_A_Fixed_Cost": -1.0,
+						    "PPM_A_Fixed_Cost": 0.01,
 						    "PPM_A_Mobile_Cost": -1.0,
 						    "PPM_A_Public_Cost": -1.0
 						}
