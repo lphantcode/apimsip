@@ -17,6 +17,41 @@ module.exports = function (app) {
 				});
   	});
 	
+	app.get('/operator-consents', async function(req, res) {
+		res.json(
+		 {
+		  "Values": [
+		    {
+		      "Id": "string",
+		      "TenantId": "string",
+		      "TenantOrigin": "string",
+		      "OperatorId": "string",
+		      "Status": "Active",
+		      "ConsentedOn": "2019-08-24T14:15:22Z",
+		      "LastModifiedOn": "2019-08-24T14:15:22Z",
+		      "ConsentedCountries": [
+			"string"
+		      ],
+		      "ContactDetails": {
+			"FullName": "string",
+			"Email": "string",
+			"PhoneNumber": "string",
+			"CompanyName": "string",
+			"CompanySize": "string"
+		      }
+		    }
+		  ],
+		  "TotalCount": 0
+		}
+		);
+  	});
+	
+	
+	
+	
+	
+	
+	
   app.post('/mSIPQuotation', async function(req, res) {
 	try{
 		const OrderData = {
