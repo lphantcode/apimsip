@@ -9,7 +9,7 @@ module.exports = function (app) {
 		res.json({
 			  "data": [
 				{
-					    "text": 'Hello, how are you? This should be a very long message so that we can test how it fit into the screen.',
+					    "text": 'Hello Aday, how are you? This should be a very long message so that we can test how it fit into the screen.',
 					    "reply": false,
 					    "date": new Date()
 					  }
