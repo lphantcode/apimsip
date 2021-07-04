@@ -39,9 +39,28 @@ module.exports = function (app) {
 			"CompanyName": "Telefónica",
 			"CompanySize": "BIG"
 		      }
+		    },
+		    {
+		      "Id": "123456789abc",
+		      "TenantId": "aaa1112223333",
+		      "TenantOrigin": "bbbbbbbbbb123456",
+		      "OperatorId": "987654321cbd",
+		      "Status": "Active",
+		      "ConsentedOn": "2019-08-24T14:15:22Z",
+		      "LastModifiedOn": "2019-08-24T14:15:22Z",
+		      "ConsentedCountries": [
+			"Spain", "Peru"
+		      ],
+		      "ContactDetails": {
+			"FullName": "Pepe Perera",
+			"Email": "pepe.pererarodriguez@telefonica.com",
+			"PhoneNumber": "+34 6191234567",
+			"CompanyName": "TGS",
+			"CompanySize": "BIG"
+		      }
 		    }
 		  ],
-		  "TotalCount": 1
+		  "TotalCount": 2
 		}
 		);
   	});
