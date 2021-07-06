@@ -17,6 +17,21 @@ module.exports = function (app) {
 				});
   	});
 	
+	app.post('/fastnotificationtest', async function(req, res) {
+		console.log('....................................');
+		console.log('Notification received correctly on: ' + Date());
+		console.log(req.body);
+		console.log('....................................');
+		res.json({
+			  "data": [
+				{
+					    "text": 'Notification received correctly',
+					    "date": new Date()
+					  }
+				  ]
+				});
+  	});
+	
 	app.get('/operator-consents', async function(req, res) {
 		res.json(
 		 {
