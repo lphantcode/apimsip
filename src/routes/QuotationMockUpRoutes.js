@@ -114,6 +114,38 @@ module.exports = function (app) {
 			  "Elin": null
 			}
 		      ]
+		    },
+		{
+		      "Id": "123456789",
+		      "Country": "Spain",
+		      "HouseNumber": "87",
+		      "HouseNumberSuffix": null,
+		      "PreDirectional": "Avd.",
+		      "StreetName": "Cano",
+		      "StreetSuffix": null,
+		      "PostDirectional": null,
+		      "StateOrProvince": "Madrid",
+		      "CountyOrDistrict": null,
+		      "CityOrTown": "Madrid",
+		      "CityOrTownAlias": null,
+		      "PostalOrZipCode": "28020",
+		      "Description": null,
+		      "CompanyName": "Colgate",
+		      "CompanyId": "987654321",
+		      "DefaultLocationId": "123456789",
+		      "ValidationStatus": "Validated",
+		      "TenantId": "abc123456789",
+		      "PartnerId": "Tef123456789",
+		      "Locations": [
+			{
+			  "Id": "987654321",
+			  "CivicAddressId": "123456789",
+			  "Description": "Planta 6, puerta 4",
+			  "AdditionalInfo": null,
+			  "IsDefault": true,
+			  "Elin": null
+			}
+		      ]
 		    }
 		  ]
 		})
