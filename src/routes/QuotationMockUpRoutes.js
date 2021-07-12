@@ -80,7 +80,44 @@ module.exports = function (app) {
 		);
   	});
 	
-	
+	app.get('/civic-addresses', async function(req, res) {
+		res.json({
+		  "CivicAddresses": [
+		    {
+		      "Id": "123456789",
+		      "Country": "Spain",
+		      "HouseNumber": "40",
+		      "HouseNumberSuffix": null,
+		      "PreDirectional": "Avd.",
+		      "StreetName": "Paseo de la Castellana",
+		      "StreetSuffix": null,
+		      "PostDirectional": null,
+		      "StateOrProvince": "Madrid",
+		      "CountyOrDistrict": null,
+		      "CityOrTown": "Madrid",
+		      "CityOrTownAlias": null,
+		      "PostalOrZipCode": "28020",
+		      "Description": null,
+		      "CompanyName": "Colgate",
+		      "CompanyId": "987654321",
+		      "DefaultLocationId": "123456789",
+		      "ValidationStatus": "Validated",
+		      "TenantId": "abc123456789",
+		      "PartnerId": "Tef123456789",
+		      "Locations": [
+			{
+			  "Id": "987654321",
+			  "CivicAddressId": "123456789",
+			  "Description": "Planta 6, puerta 4",
+			  "AdditionalInfo": null,
+			  "IsDefault": true,
+			  "Elin": null
+			}
+		      ]
+		    }
+		  ]
+		})
+	});
 	
 	
 	
