@@ -80,6 +80,28 @@ module.exports = function (app) {
 		);
   	});
 	
+	app.get('/operator-consents/tenants', async function(req, res) {
+		res.json(
+		 {
+		    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
+		    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
+		    "TenantOrigin": "Office365",
+		    "OperatorId": "ea777980-0809-421d-a41a-361c12137772",
+		    "Status": "Active",
+		    "ConsentedOn": "2021-07-10T01:22:29.1788175+00:00",
+		    "LastModifiedOn": "2021-07-10T01:22:29.1788175+00:00",
+		    "ConsentedCountries": [
+			"US",
+			"CL",
+			"CO",
+			"MX",
+			"ES"
+		    ],
+		    "ContactDetails": null
+		}
+		);
+  	});
+	
 	app.get('/civic-addresses', async function(req, res) {
 		res.json({
 		  "CivicAddresses": [
