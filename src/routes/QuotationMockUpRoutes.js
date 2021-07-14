@@ -90,13 +90,7 @@ module.exports = function (app) {
 		    "Status": "Active",
 		    "ConsentedOn": "2021-07-10T01:22:29.1788175+00:00",
 		    "LastModifiedOn": "2021-07-10T01:22:29.1788175+00:00",
-		    "ConsentedCountries": [
-			"US",
-			"CL",
-			"CO",
-			"MX",
-			"ES"
-		    ],
+		    "ConsentedCountries": null,
 		    "ContactDetails": null
 		}
 		);
