@@ -111,7 +111,7 @@ module.exports = function (app) {
 		      "HouseNumber": "40",
 		      "HouseNumberSuffix": null,
 		      "PreDirectional": "Avd.",
-		      "StreetName": "Paseo de la Castellana",
+		      "StreetName": "Pepe de la Castellana",
 		      "StreetSuffix": null,
 		      "PostDirectional": null,
 		      "StateOrProvince": "Madrid",
