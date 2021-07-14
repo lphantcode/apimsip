@@ -106,7 +106,7 @@ module.exports = function (app) {
 		res.json({
 		  "CivicAddresses": [
 		    {
-		      "Id": "abcdefghi",
+		      "Id": "pepepepe",
 		      "Country": "Spain",
 		      "HouseNumber": "40",
 		      "HouseNumberSuffix": null,
@@ -128,8 +128,8 @@ module.exports = function (app) {
 		      "PartnerId": "Tef123456789",
 		      "Locations": [
 			{
-			  "Id": "987654321",
-			  "CivicAddressId": "123456789",
+			  "Id": "papapa",
+			  "CivicAddressId": "papapa",
 			  "Description": "Planta 6, puerta 4",
 			  "AdditionalInfo": null,
 			  "IsDefault": true,
