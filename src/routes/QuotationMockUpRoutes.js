@@ -81,6 +81,7 @@ module.exports = function (app) {
   	});
 	
 	app.get('/operator-consents/tenants', async function(req, res) {
+		res.json({"message": "Hola"});
 		//console.log('TenaantId: ' + req.params.tenantId);
 			/*res.json(
 			 {
