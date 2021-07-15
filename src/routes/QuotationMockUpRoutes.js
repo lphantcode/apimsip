@@ -80,29 +80,49 @@ module.exports = function (app) {
 		);
   	});
 	
-	app.get('/operator-consents/tenants', async function(req, res) {
-		res.json(
-		 {
-		    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
-		    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
-		    "TenantOrigin": "Office365",
-		    "OperatorId": "ea777980-0809-421d-a41a-361c12137772",
-		    "Status": "Active",
-		    "ConsentedOn": "2021-07-10T01:22:29.1788175+00:00",
-		    "LastModifiedOn": "2021-07-10T01:22:29.1788175+00:00",
-		    "ConsentedCountries": [
-			"US",
-			"CL",
-			"CO",
-			"MX",
-			"ES"
-		    ],
-		    "ContactDetails": null
+	app.get('/operator-consents/tenants/:tenantId', async function(req, res) {
+		if (req.params['tenantId']='19949ec8-1a3e-4659-8531-c8f354d69846'){
+			res.json(
+			 {
+			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
+			    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
+			    "TenantOrigin": "Office365",
+			    "OperatorId": "ea777980-0809-421d-a41a-361c12137772",
+			    "Status": "Active",
+			    "ConsentedOn": "2021-07-10T01:22:29.1788175+00:00",
+			    "LastModifiedOn": "2021-07-10T01:22:29.1788175+00:00",
+			    "ConsentedCountries": [				
+				"MX",
+				"ES"
+			    ],
+			    "ContactDetails": null
+			}
+			);
+		}else{
+			res.json(
+			 {
+			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
+			    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
+			    "TenantOrigin": "Office365",
+			    "OperatorId": "ea777980-0809-421d-a41a-361c12137772",
+			    "Status": "Active",
+			    "ConsentedOn": "2021-07-10T01:22:29.1788175+00:00",
+			    "LastModifiedOn": "2021-07-10T01:22:29.1788175+00:00",
+			    "ConsentedCountries": [
+				    "US",
+				    "CL",
+				    "CO
+				    "MX",
+				    "ES"
+			    ],
+			    "ContactDetails": null
+			}
+			);
 		}
-		);
   	});
 	
-	app.get('/civic-addresses', async function(req, res) {
+	app.get('/civic-addresses/:tenantId', async function(req, res) {
+		if (req.params['tenantId']='19949ec8-1a3e-4659-8531-c8f354d69846'){
 		res.json({
 		  "CivicAddresses": [
 		    {
@@ -171,6 +191,44 @@ module.exports = function (app) {
 		    }
 		  ]
 		})
+		}else{
+		res.json({
+		  "CivicAddresses": [
+		    {
+		      "Id": "pepepepe",
+		      "Country": "Spain",
+		      "HouseNumber": "40",
+		      "HouseNumberSuffix": null,
+		      "PreDirectional": "Avd.",
+		      "StreetName": "Pepe de la Castellana",
+		      "StreetSuffix": null,
+		      "PostDirectional": null,
+		      "StateOrProvince": "Madrid",
+		      "CountyOrDistrict": null,
+		      "CityOrTown": "Madrid",
+		      "CityOrTownAlias": null,
+		      "PostalOrZipCode": "28020",
+		      "Description": null,
+		      "CompanyName": "Colgate",
+		      "CompanyId": "987654321",
+		      "DefaultLocationId": "123456789",
+		      "ValidationStatus": "Validated",
+		      "TenantId": "abc123456789",
+		      "PartnerId": "Tef123456789",
+		      "Locations": [
+			{
+			  "Id": "papapa",
+			  "CivicAddressId": "papapa",
+			  "Description": "Planta 6, puerta 4",
+			  "AdditionalInfo": null,
+			  "IsDefault": true,
+			  "Elin": null
+			}
+		      ]
+		    }
+		  ]
+		})
+		}
 	});
 	
 	
