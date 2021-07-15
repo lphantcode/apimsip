@@ -81,7 +81,7 @@ module.exports = function (app) {
   	});
 	
 	app.get('/operator-consents/tenants/:tenantId', async function(req, res) {
-		if (req.params['tenantId']='19949ec8-1a3e-4659-8531-c8f354d69846'){
+		if (req.params.tenantId='19949ec8-1a3e-4659-8531-c8f354d69846'){
 			res.json(
 			 {
 			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
