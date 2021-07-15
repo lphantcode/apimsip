@@ -100,7 +100,7 @@ module.exports = function (app) {
 			    ],
 			    "ContactDetails": null
 			}
-			);	*/	
+			);	
   	});
 	
 	app.get('/civic-addresses/:tenantId', async function(req, res) {
