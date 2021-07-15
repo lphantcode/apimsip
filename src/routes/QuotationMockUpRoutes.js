@@ -82,7 +82,7 @@ module.exports = function (app) {
 	
 	app.get('/operator-consents/tenants', async function(req, res) {
 		//console.log('TenaantId: ' + req.params.tenantId);
-			res.json(
+			/*res.json(
 			 {
 			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
 			    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
@@ -100,7 +100,7 @@ module.exports = function (app) {
 			    ],
 			    "ContactDetails": null
 			}
-			);		
+			);	*/	
   	});
 	
 	app.get('/civic-addresses/:tenantId', async function(req, res) {
