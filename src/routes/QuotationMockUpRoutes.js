@@ -80,25 +80,8 @@ module.exports = function (app) {
 		);
   	});
 	
-	app.get('/operator-consents/tenants/:tenantId', async function(req, res) {
-		if (req.params.tenantId='19949ec8-1a3e-4659-8531-c8f354d69846'){
-			res.json(
-			 {
-			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
-			    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
-			    "TenantOrigin": "Office365",
-			    "OperatorId": "ea777980-0809-421d-a41a-361c12137772",
-			    "Status": "Active",
-			    "ConsentedOn": "2021-07-10T01:22:29.1788175+00:00",
-			    "LastModifiedOn": "2021-07-10T01:22:29.1788175+00:00",
-			    "ConsentedCountries": [				
-				"MX",
-				"ES"
-			    ],
-			    "ContactDetails": null
-			}
-			);
-		}else{
+	app.get('/operator-consents/tenants', async function(req, res) {
+		//console.log('TenaantId: ' + req.params.tenantId);
 			res.json(
 			 {
 			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
@@ -117,8 +100,7 @@ module.exports = function (app) {
 			    ],
 			    "ContactDetails": null
 			}
-			);
-		}
+			);		
   	});
 	
 	app.get('/civic-addresses/:tenantId', async function(req, res) {
