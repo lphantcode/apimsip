@@ -122,8 +122,9 @@ module.exports = function (app) {
   	});
 	
 	app.get('/address-management/tenants/:tenantId/civic-addresses', async function(req, res) {
+		console.log('TenantId: ' + req.params.tenantId);
 		var output_json;
-		if (req.params.tenantId='19949ec8-1a3e-4659-8531-c8f354d69846'){
+		if (req.params.tenantId == '19949ec8-1a3e-4659-8531-c8f354d69846'){
 		  output_json =
 		{
 		  "CivicAddresses": [
