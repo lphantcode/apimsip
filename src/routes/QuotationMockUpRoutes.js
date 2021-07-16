@@ -51,7 +51,7 @@ module.exports = function (app) {
 			"FullName": "Ruben López",
 			"Email": "ruben.lopezcasado@telefonica.com",
 			"PhoneNumber": "+34 619316053",
-			"CompanyName": "Telefónica",
+			"CompanyName": "Colgate",
 			"CompanySize": "BIG"
 		      }
 		    },
