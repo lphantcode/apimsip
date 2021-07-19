@@ -36,25 +36,23 @@ module.exports = function (app) {
 		res.json(
 		 {
 		  "Values": [
-		    {
-		      "Id": "123456789abc",
-		      "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
-		      "TenantOrigin": "bbbbbbbbbb123456",
-		      "OperatorId": "987654321cbd",
-		      "Status": "Active",
-		      "ConsentedOn": "2021-07-15T14:15:22Z",
-		      "LastModifiedOn": "2021-07-15T14:15:22Z",
-		      "ConsentedCountries": [
-			"Spain", "Peru"
-		      ],
-		      "ContactDetails": {
-			"FullName": "Ruben López",
-			"Email": "ruben.lopezcasado@telefonica.com",
-			"PhoneNumber": "+34 619316053",
-			"CompanyName": "Colgate",
-			"CompanySize": "BIG"
-		      }
-		    },
+		            {
+			    "Id": "6901cec7-0af4-4bfa-b448-a95c051056ed",
+			    "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
+			    "TenantOrigin": "Office365",
+			    "OperatorId": "ea777980-0809-421d-a41a-361c12137772",
+			    "Status": "Active",
+			    "ConsentedOn": "2021-07-18T01:22:29.1788175+00:00",
+			    "LastModifiedOn": "2021-07-18T01:22:29.1788175+00:00",
+			    "ConsentedCountries": [
+				"US",
+				"CL",
+				"CO",
+				"MX",
+				"ES"
+			    ],
+			    "ContactDetails": null
+			},
 		    {
 		      "Id": "123456789abc",
 		      "TenantId": "aaa1112223333",
