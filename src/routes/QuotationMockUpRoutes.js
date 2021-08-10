@@ -123,75 +123,8 @@ module.exports = function (app) {
 		console.log('TenantId: ' + req.params.tenantId);
 		var output_json;
 		if (req.params.tenantId == '19949ec8-1a3e-4659-8531-c8f354d69846'){
-		  output_json =
-		{
-  "CivicAddresses": [
-    {
-      "Id": "pepepepe",
-      "Country": "Spain",
-      "HouseNumber": "40",
-      "HouseNumberSuffix": null,
-      "PreDirectional": "Avd.",
-      "StreetName": "Pepe de la Castellana",
-      "StreetSuffix": null,
-      "PostDirectional": null,
-      "StateOrProvince": "Madrid",
-      "CountyOrDistrict": null,
-      "CityOrTown": "Madrid",
-      "CityOrTownAlias": null,
-      "PostalOrZipCode": "28020",
-      "Description": null,
-      "CompanyName": "Colgate",
-      "CompanyId": "987654321",
-      "DefaultLocationId": "123456789",
-      "ValidationStatus": "Validated",
-      "TenantId": "abc123456789",
-      "PartnerId": "Tef123456789",
-      "Locations": [
-        {
-          "Id": "papapa",
-          "CivicAddressId": "papapa",
-          "Description": "Planta 6, puerta 4",
-          "AdditionalInfo": null,
-          "IsDefault": true,
-          "Elin": null
-        }
-      ]
-    },
-    {
-      "Id": "ihgfedcba",
-      "Country": "Spain",
-      "HouseNumber": "87",
-      "HouseNumberSuffix": null,
-      "PreDirectional": "Avd.",
-      "StreetName": "Cano",
-      "StreetSuffix": null,
-      "PostDirectional": null,
-      "StateOrProvince": "Madrid",
-      "CountyOrDistrict": null,
-      "CityOrTown": "Madrid",
-      "CityOrTownAlias": null,
-      "PostalOrZipCode": "28020",
-      "Description": null,
-      "CompanyName": "Colgate",
-      "CompanyId": "987654321",
-      "DefaultLocationId": "123456789",
-      "ValidationStatus": "Validated",
-      "TenantId": "abc123456789",
-      "PartnerId": "Tef123456789",
-      "Locations": [
-        {
-          "Id": "987654321",
-          "CivicAddressId": "123456789",
-          "Description": "Planta 6, puerta 4",
-          "AdditionalInfo": null,
-          "IsDefault": true,
-          "Elin": null
-        }
-      ]
-    }
-  ]
-}
+		  output_json = {}
+		
 		}else{
 			output_json =
 		{
