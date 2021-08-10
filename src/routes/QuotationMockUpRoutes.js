@@ -126,9 +126,9 @@ module.exports = function (app) {
 		  output_json = {
   "CivicAddresses": [
     {
-      "Id": "pepepepe",
-      "Country": "Spain",
-      "HouseNumber": "40",
+      "Id": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
+      "Country": "US",
+      "HouseNumber": "800",
       "HouseNumberSuffix": null,
       "PreDirectional": "Avd.",
       "StreetName": "Pepe de la Castellana",
