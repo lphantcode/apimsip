@@ -147,22 +147,7 @@ module.exports = function (app) {
       "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
       "PartnerId": "00000000-0000-0000-0000-000000000000",
       "Locations": [
-        {
-          "Id": "9dfe49bf-d0e4-4a9e-89d6-8b203084dbee",
-          "CivicAddressId": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
-          "Description": "MySite",
-          "AdditionalInfo": "Building A",
-          "IsDefault": false,
-          "Elin": null
-        },
-        {
-          "Id": "bb69cbc2-b249-4422-bde3-2ccbdbbdede4",
-          "CivicAddressId": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
-          "Description": "MySite",
-          "AdditionalInfo": null,
-          "IsDefault": true,
-          "Elin": null
-        }
+        
       ]
     }
   ]
