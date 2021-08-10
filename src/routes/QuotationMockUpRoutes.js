@@ -124,65 +124,45 @@ module.exports = function (app) {
 		var output_json;
 		if (req.params.tenantId == '19949ec8-1a3e-4659-8531-c8f354d69846'){
 		  output_json = {
+  
+		
+		}else{
+			output_json = {
   "CivicAddresses": [
     {
-      "Id": "pepepepe",
-      "Country": "Spain",
-      "HouseNumber": "40",
-      "HouseNumberSuffix": null,
-      "PreDirectional": "Avd.",
-      "StreetName": "Pepe de la Castellana",
-      "StreetSuffix": null,
-      "PostDirectional": null,
-      "StateOrProvince": "Madrid",
-      "CountyOrDistrict": null,
-      "CityOrTown": "Madrid",
-      "CityOrTownAlias": null,
-      "PostalOrZipCode": "28020",
-      "Description": null,
-      "CompanyName": "Colgate",
-      "CompanyId": "987654321",
-      "DefaultLocationId": "123456789",
+      "Id": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
+      "Country": "US",
+      "HouseNumber": "800",
+      "HouseNumberSuffix": "",
+      "PreDirectional": "",
+      "StreetName": "Northwest 62nd Avenue",
+      "StreetSuffix": "",
+      "PostDirectional": "",
+      "StateOrProvince": "FL",
+      "CountyOrDistrict": "",
+      "CityOrTown": "Miami",
+      "CityOrTownAlias": "",
+      "PostalOrZipCode": "33126",
+      "Description": "MySite",
+      "CompanyName": "TBS",
+      "CompanyId": "",
+      "DefaultLocationId": "bb69cbc2-b249-4422-bde3-2ccbdbbdede4",
       "ValidationStatus": "Validated",
-      "TenantId": "abc123456789",
-      "PartnerId": "Tef123456789",
+      "TenantId": "19949ec8-1a3e-4659-8531-c8f354d69846",
+      "PartnerId": "00000000-0000-0000-0000-000000000000",
       "Locations": [
         {
-          "Id": "papapa",
-          "CivicAddressId": "papapa",
-          "Description": "Planta 6, puerta 4",
-          "AdditionalInfo": null,
-          "IsDefault": true,
+          "Id": "9dfe49bf-d0e4-4a9e-89d6-8b203084dbee",
+          "CivicAddressId": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
+          "Description": "MySite",
+          "AdditionalInfo": "Building A",
+          "IsDefault": false,
           "Elin": null
-        }
-      ]
-    },
-    {
-      "Id": "ihgfedcba",
-      "Country": "Spain",
-      "HouseNumber": "87",
-      "HouseNumberSuffix": null,
-      "PreDirectional": "Avd.",
-      "StreetName": "Cano",
-      "StreetSuffix": null,
-      "PostDirectional": null,
-      "StateOrProvince": "Madrid",
-      "CountyOrDistrict": null,
-      "CityOrTown": "Madrid",
-      "CityOrTownAlias": null,
-      "PostalOrZipCode": "28020",
-      "Description": null,
-      "CompanyName": "Colgate",
-      "CompanyId": "987654321",
-      "DefaultLocationId": "123456789",
-      "ValidationStatus": "Validated",
-      "TenantId": "abc123456789",
-      "PartnerId": "Tef123456789",
-      "Locations": [
+        },
         {
-          "Id": "987654321",
-          "CivicAddressId": "123456789",
-          "Description": "Planta 6, puerta 4",
+          "Id": "bb69cbc2-b249-4422-bde3-2ccbdbbdede4",
+          "CivicAddressId": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
+          "Description": "MySite",
           "AdditionalInfo": null,
           "IsDefault": true,
           "Elin": null
@@ -191,9 +171,6 @@ module.exports = function (app) {
     }
   ]
 }
-		
-		}else{
-			output_json =
 		{
 		  "CivicAddresses": [
 		    {
