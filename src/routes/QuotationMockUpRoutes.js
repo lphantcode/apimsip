@@ -163,7 +163,7 @@ module.exports = function (app) {
 		      "Id": "pepepepe",
 		      "Country": "Spain",
 		      "HouseNumber": "40",
-		      "HouseNumberSuffix": null,
+		      "HouseNumberSuffix": "",
 		      "PreDirectional": "Avd.",
 		      "StreetName": "Pepe de la Castellana",
 		      "StreetSuffix": null,
