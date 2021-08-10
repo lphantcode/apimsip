@@ -124,10 +124,6 @@ module.exports = function (app) {
 		var output_json;
 		if (req.params.tenantId == '19949ec8-1a3e-4659-8531-c8f354d69846'){
 		  output_json = {
-  
-		
-		}else{
-			output_json = {
   "CivicAddresses": [
     {
       "Id": "fdb90d67-f9b1-435e-ad3e-d04c25235566",
@@ -171,6 +167,11 @@ module.exports = function (app) {
     }
   ]
 }
+  
+		
+		}else{
+			output_json = 
+
 		{
 		  "CivicAddresses": [
 		    {
