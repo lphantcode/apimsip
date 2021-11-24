@@ -1,7 +1,21 @@
 //const QuoteService = require('../models/QuoteServiceModel');
 var express_logger = require('express-logger-unique-req-id');
+var nodemailer = require('nodemailer');
 let logger = express_logger.getLogger();
 const uuid = require('node-uuid');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'cpaastgs@gmail.com',
+    pass: 'Telefonica.2021'
+  }
+});
+var mailOptions = {
+  from: 'adaypr@gmail.com',
+  to: 'adaypr@gmail.com',
+  subject: 'CPaaS Notification'
+};
 
 module.exports = function (app) {
 	
@@ -22,6 +36,17 @@ module.exports = function (app) {
 		console.log('Notification received correctly on: ' + Date());
 		console.log(req.body);
 		console.log('....................................');
+		
+		//Send Mail
+		mailOptions.text = req.body;
+		transporter.sendMail(mailOptions, function(error, info){
+		  if (error) {
+		    console.log(error);
+		  } else {
+		    console.log('Email sent: ' + info.response);
+		  }
+		});
+		
 		res.json({
 			  "data": [
 				{
